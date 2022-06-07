@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * prints exactly Programming is like building a multilingual puzzle, followed by a new line using the function puts
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
