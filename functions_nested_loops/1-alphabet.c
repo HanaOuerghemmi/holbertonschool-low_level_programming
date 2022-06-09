@@ -1,10 +1,10 @@
+#include <unistd.h>
 #include "main.h"
 /**
- * main - header file print alphabet
+ * print_alphabet - header file print alphabet
  *
  * Return: Void
  */
-
 void print_alphabet(void)
 {
 
