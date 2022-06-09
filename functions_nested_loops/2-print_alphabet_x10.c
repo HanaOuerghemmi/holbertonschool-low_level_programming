@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main -print alphabet 10 time
+ * print_alphabet_x10 -print alphabet 10 time
  *
  * Return void
  */
