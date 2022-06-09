@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * * main - islower
+ * * _islower - islower
  *
  * Return : Always 0.
  */
