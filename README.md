@@ -1,15 +1,7 @@
-## C - Hello, World
-## General
-* Why C programming is awesome
-* Who invented C
-* Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds
-* What happens when you type gcc main.c
-* What is an entry point
-* What is main
-* How to print text using printf, puts and putchar
-* How to get the size of a specific type using the unary operator sizeof
-* How to compile using gcc
-* What is the default program name when compiling with gcc
-* What is the official C coding style and how to check your code with betty-style
-* How to find the right header to include in your source code when using a standard library function
-* How does the main function influence the return value of the program
+## C - Holberton low level programmin
+# General
+# projects
+* [hello_world] (https://github.com/HanaOuerghemmi/holbertonschool-low_level_programming/tree/master/hello_world)
+* [variables_if_else_while] (https://github.com/HanaOuerghemmi/holbertonschool-low_level_programming/tree/master/variables_if_else_while)
+* [functions_nested_loops] (https://github.com/HanaOuerghemmi/holbertonschool-low_level_programming/tree/master/functions_nested_loops)
+* [debugging] (https://github.com/HanaOuerghemmi/holbertonschool-low_level_programming/tree/master/debugging)
