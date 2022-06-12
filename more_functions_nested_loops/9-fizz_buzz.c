@@ -19,5 +19,6 @@ int main(void)
 		else
 			printf(" ");
 	}
-	_putchar('\n');
+	putchar('\n');
+return (0);
 }
