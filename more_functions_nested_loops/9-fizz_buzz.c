@@ -17,7 +17,7 @@ int main(void)
 		else if ((i % 5 == 0))
 			printf("buzz");
 		else
-			printf(" ");
+			printf("%d ", i);
 	}
 	putchar('\n');
 return (0);
