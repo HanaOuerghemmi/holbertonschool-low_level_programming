@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
  * puts2 - print a string in reverse
  *
@@ -10,15 +10,18 @@
 void puts2(char *str)
 {
 	int i;
+	int j;
 
-	i = 0;
+	j = strlen(str);
 
-	while (str[i] != '\0')
+	for (i = 0 ; i < j; i += 2)
 	{
-		if ((str[i] % 2) == 0)
-			_putchar(*str + i);
-		i++;
+		_putchar(str[i]);
 	}
+
+
+
+
 	_putchar('\n');
 }
 
