@@ -3,7 +3,7 @@
 /**
  * print_array - prints array
  * @a: the array point
- * 0n: the number array
+ * @n: the number
  * Return: void
  */
 void print_array(int *a, int n)
