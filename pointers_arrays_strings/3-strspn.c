@@ -6,7 +6,7 @@
  * @accept: var
  * Return: int
  */
-int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int b;
 	int i;
