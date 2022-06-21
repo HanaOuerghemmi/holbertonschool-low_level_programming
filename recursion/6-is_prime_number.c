@@ -21,7 +21,8 @@ int _prime(int n, int i)
 
 
 /**
- * is_prime_number - function that returns 1 if the input is a prime number else 0
+ * is_prime_number - function that returns 1
+ *					 if the input is a prime number else 0
  *
  * @n: number
  * Return: 1 if prime 0 if not .
