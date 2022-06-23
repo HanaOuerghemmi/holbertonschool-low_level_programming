@@ -11,30 +11,20 @@
  */
 int main(int argc, char **argv)
 {
-	unsigned int j, s;
-	int i;
-	char *a;
+	int i, j, s;
 
-	if (argc > 1)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 0; i < argc; i++)
-		{
-			a = argv[i];
-			for (j = 0; j < strlen(a); j++)
-				if (!(a[j] >= 48 && a[j] <= 57))
-				{
-					printf("Error\n");
-					return (1);
-				}
-			s += atoi(a);
-			a++;
-		}
-		printf("%d\n", s);
+		for (j = 0; argv[i][j]; j++)
+			if (argv[i][j] < 48 || argv[i][j] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
+		s += atoi(argv[i]);
 	}
-	else
-	{
-		printf("0\n");
-	}
+	printf("%d\n", s);
+
 	return (0);
 }
 
