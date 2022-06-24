@@ -23,7 +23,6 @@ char *_strdup(char *str)
 		return (NULL);
 	while (*str)
 		*a++ = *str++;
-	*a = '\0';
 
 	return (c);
 
