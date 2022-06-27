@@ -18,15 +18,15 @@ char *argstostr(int ac, char **av)
 	if ((ac == 0) || (av == NULL))
 		return (NULL);
 
-/*size of the argument value  */
+				/*size of the argument value  */
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 			size++;
 	}
 
-
-	str = malloc(size + 1);
+				/* allocation memoire */
+	str = malloc(sizeof(char) * size);
 
 	if (str == NULL) /* return NULL if malloc fails*/
 		return (NULL);
