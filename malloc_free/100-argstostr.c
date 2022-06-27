@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	/* allocation memoire */
-	str = (char *)malloc(size + 1);
+	str = malloc(ac);
 
 	if (str == NULL) /* return NULL if malloc fails*/
 		return (NULL);
