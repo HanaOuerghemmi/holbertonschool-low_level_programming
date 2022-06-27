@@ -24,10 +24,10 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
-			size = strlen(av[i]) + size;
+			size++;
 
 	}
-
+	size += ac;
 	/* allocation memoire */
 	str = malloc(size + 1);
 	if (str == NULL) /* return NULL if malloc fails*/
