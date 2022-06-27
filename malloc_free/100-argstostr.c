@@ -13,11 +13,20 @@ char *argstostr(int ac, char **av)
 	int i, j; /* incrementation to loop av*/
 	char *str; /* pointeur string for the result to concat the av */
 	int a; /*incrementation for the str*/
+	int size;
 
 	if ((ac == 0) || (av == NULL))
 		return (NULL);
 
-	str = malloc(ac);
+/*size of all the argv */
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+			size++;
+	}
+
+
+	str = malloc(size + 1);
 
 	if (str == NULL) /* return NULL if malloc fails*/
 		return (NULL);
@@ -31,5 +40,7 @@ char *argstostr(int ac, char **av)
 
 		str[a++] = '\n';
 	}
+	str[size] = '\0';
+	free(str);
 	return (str);
 }
