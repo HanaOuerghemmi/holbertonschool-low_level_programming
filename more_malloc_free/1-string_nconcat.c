@@ -1,27 +1,38 @@
 #include "main.h"
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 /**
- * string_nconcat - concatenates tow string
- * @s1: string1
- * @s2: string2
- * @n: size
+ * string_nconcat - function that concatenates tow string
  *
- * Return: char
+ * @s1: string 1
+ * @s2: string 2
+ * @n: size concate
+ * Return: string concatenates.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *str;
+	char *a;
+	unsigned long i;
+
+	if (s1 == NULL && s2 == NULL)
+		a = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 
-	str = malloc(n + 1);
-	if (str == NULL)
+
+	a = malloc(sizeof(char) * (strlen(s1) + n + 1));
+
+	if (a == NULL)
 		return (NULL);
+	for (i = 0; i < strlen(s1); i++)
+		a[i] = s1[i];
+	for (i = 0; i < n; i++)
+		a[strlen(s1) + i] = s2[i];
 
-	str = s1 + strlen(s1);
-	while (*s2 != '\0' && n--)
-		*str++ = *s2++;
-	*str = '\0';
-	return (s1);
+	return (a);
 
 }
