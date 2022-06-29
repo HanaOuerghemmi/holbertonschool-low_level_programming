@@ -15,6 +15,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *a;
 	unsigned int i, len = n;
 
+	if (n >= strlen(s2))
+		n = n + strlen(s2);
+
 	/*if NULL is passed, treat it as an empty string*/
 
 	if (s1 == NULL)
