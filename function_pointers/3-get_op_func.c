@@ -1,12 +1,12 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "3-calc.h"
 /**
- * get_op_func- function add a + b
+ * get_op_func- function
  * @s: the aargument
  * Return: int
  */
 int (*get_op_func(char *s))(int, int)
 {
+
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
@@ -15,10 +15,13 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
+
 	int i = 0;
 
-	while (ops[i].op != *s)
+
+	while (strcmp(s, ops[i].op) != 0)
 		i++;
-	return(op[i].f);
+	return (ops[i].f);
 
 }
+

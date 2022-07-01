@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include "3-calc.h"
 #include<stdlib.h>
+int (*get_op_func(char *s))(int, int);
 /**
  * main - a program that performs simple operations
  * @argc: argiment count
@@ -9,9 +10,9 @@
  */
 int main(int argc, char **argv)
 {
-	int a, b/*, r*/;
-/*	int (*f)(int, int);*/
-/*	char *op;*/
+	int a, b;
+	int (*f)(int, int);
+	char *op;
 
 	if (argc != 4)
 	{
@@ -26,7 +27,7 @@ int main(int argc, char **argv)
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-/*	op = argv[2];*/
+	op = argv[2];
 
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && b == 0)
 	{
@@ -34,12 +35,12 @@ int main(int argc, char **argv)
 		exit(100);
 
 	}
-/*	if (get_op_func(op) == NULL)*/
-/*	{
+	if (get_op_func(op) == NULL)
+	{
 		printf("Error\n");
 		exit(99);
-	}*/
-/*	
-	printf("%d\n", f(a, b));*/
+	}
+
+	printf("%d\n", f(a, b));
 	return (0);
 }
