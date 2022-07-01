@@ -7,9 +7,9 @@
  * @cmp: function popinters
  * Return: int
  */
-int int_index(int *array, size_t size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	size_t index;
+	int index;
 
 	if (!array || !cmp || size <= 0)
 		return (-1);
