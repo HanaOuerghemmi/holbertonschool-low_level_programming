@@ -81,12 +81,13 @@ void print_all(const char * const format, ...)
 	};
 
 	i = 0;
-	j = 0;
+
 	sep = "";
 
 	va_start(args, format);
-		while (format && format[i])
+		while (format[i])
 		{
+			j = 0;
 			while (j <  4 && format[i] != *(s[j].symbol))
 				j++;
 			if (j < 4)
