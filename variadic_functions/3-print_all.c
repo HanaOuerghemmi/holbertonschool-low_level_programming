@@ -85,7 +85,7 @@ void print_all(const char * const format, ...)
 	sep = "";
 
 	va_start(args, format);
-		while (format[i])
+		while (format != NULL && format[i])
 		{
 			j = 0;
 			while (j <  4 && format[i] != *(s[j].symbol))
