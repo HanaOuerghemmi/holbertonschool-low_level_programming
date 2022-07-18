@@ -1,4 +1,3 @@
-
 #include "main.h"
 /**
  * binary_to_uint - function that convert a binary number to unsigned int
@@ -11,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int sum = 0, mult = 1;
 	int len;
 
-	if (*b == '\0')
+	if (b == NULL)
 		return (0);
 
 	len = strlen(b);
@@ -27,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 
 }
 /**
- * binary to decimal
+ * binary- to decimal
  * 10101/2 --> 21/10
  * 1    0   1   0   1
  * 2^4 2^3 2^2 2^1 2^0
