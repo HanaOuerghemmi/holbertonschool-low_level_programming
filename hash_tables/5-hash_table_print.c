@@ -12,15 +12,15 @@ void hash_table_print(const hash_table_t *ht)
 	for (index = 0; index < (ht->size); index++)
 	{
 		element = ht->array[index];
-		while (element != NULL)
+		while (element)
 		{
 			if (i == 1)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			printf("'%s' : '%s'", element->key, element->value);
 			i = 1;
+			printf("'%s' : '%s'", element->key, element->value);
 			element = element->next;
 
 		}
