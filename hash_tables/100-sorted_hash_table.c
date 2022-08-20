@@ -153,6 +153,8 @@ void shash_table_print_rev(const shash_table_t *ht)
  * shash_table_delete - function that deletes a hash table
  * @ht: table
  */
+
+
 void shash_table_delete(shash_table_t *ht)
 {
 	unsigned long int index;
