@@ -22,7 +22,7 @@ int binary_search(int *array, size_t size, int value)
 		while (i <= hight)
 		{
 			if (i != low)
-				printf(" ,%d", array[i]);
+				printf(", %d", array[i]);
 			else
 				printf("%d", array[i]);
 			i++;
